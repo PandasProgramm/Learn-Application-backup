@@ -1,0 +1,35 @@
+<h5 class="fonts" style="text-align: center">
+  "Erfolg ist die Fähigkeit, von einem Misserfolg zum anderen zu gehen, ohne seine Begeisterung zu verlieren"
+  <br>
+   Winston Churchill
+</h5>
+
+<div class="container fonts">
+  <button class="btn btn-info" (click)="onInfoClick()" style="margin-right: 1rem">Erklärung</button>
+  <button class="btn btn-info" (click)="onNewCardClick()">neue Karte</button>
+  <div *ngIf="selectInfo">
+    Die Lernkartenstruktur ist so aufgebaut, dass du 5 verschiedene Level hast.
+    Diese funktionieren wie der klassische Karteikasten aus der Grundschule.
+    <p *ngIf="selectInfo">
+      <br>
+      - 3  richtige Antworten = Level 1<br>
+      - 6  richtige Antworten = Level 2<br>
+      - 9  richtige Antworten = Level 3<br>
+      -12 richtige Antworten =  Level 4<br>
+      -15 richtige Antworten =  Level 5<br>
+    </p>
+    <p *ngIf="selectInfo">
+    Du kannst die Antwort auswählen, nachdem du dich für eine Lösung entschieden hast. Wenn du sie richtig hast, drücke
+    den grünen Button, wenn nicht drücke den roten X Button.
+    </p>
+  </div>
+  <div>
+    <div class="row">
+      <div appSelect class="box" (click)="switchToList(1)">Level 1</div>
+      <div appSelect class="box" (click)="switchToList(2)">Level 2</div>
+      <div appSelect class="box" (click)="switchToList(3)">Level 3</div>
+      <div appSelect class="box" (click)="switchToList(4)">Level 4</div>
+      <div appSelect class="box" (click)="switchToList(5)">Level 5</div>
+    </div>
+  </div>
+</div>

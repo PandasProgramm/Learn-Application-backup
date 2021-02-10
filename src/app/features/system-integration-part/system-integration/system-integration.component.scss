@@ -1,0 +1,22 @@
+$font-stack: Roboto,sans-serif;
+
+$backgroundColor:#E0ECF8;
+
+h2{
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-shadow: px -5px 3px grey;
+}
+.card{
+  margin-right: 2rem;
+}
+div{
+  background-color: $backgroundColor;
+  font-family: $font-stack;
+}
+.board {
+  background-image: url("../../../../assets/board.jpg");
+  background-size: cover;
+}

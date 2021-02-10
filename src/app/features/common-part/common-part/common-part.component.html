@@ -1,0 +1,69 @@
+<div>
+  <div class="container-fluid mb-3 " style="font-family: Railway,sans-serif;">
+    <h2>Allgmeiner Teil</h2>
+    <div class="row">
+      <div class="col-sm-12 col-md-3">
+        <!--card one-->
+        <div appSelectedItem class="card">
+          <img src="../../../../assets/einfacheSystemePNG.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 4</h5>
+            <h5 class="card-title">Einfache IT Systeme</h5>
+            <p class="card-text">
+              Grundlegende Kenntnisse in Hardware, Software. Außerdem behinhaltet dieses Lernfeld eine
+              Übersicht der Betriebssysteme und die wichtigsten Geschäftsabläufe über Planung, Beschaffung,
+              Übergabe und den Betrieb der Computertechnik.
+            </p>
+            <a appSelectedItem [routerLink]="['simplifiedItSystems']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        <!--card two-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/vernetztesysteme.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 7</h5>
+            <h5 class="card-title">Vernetzte Systeme</h5>
+            <p class="card-text">
+              Die Rechner haben oft unterschiedliche technische Ausstattungen und übernehmen die verschiedensten
+              Funktionen im Unternehmen.
+            </p>
+            <p class="card-text">
+              Die unterschiedlichen Verbindungsmedien und Kopplungsgeräte, die die Daten zwischen den
+              Rechnern transportieren, komlettieren das Netzwerk.
+            </p>
+            <a appSelectedItem [routerLink]="['crossLinkedSystems']"  class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        <!--card three-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/oeffentlicheNetze.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 9</h5>
+            <h5 class="card-title">Öffentliche Netze</h5>
+            <p class="card-text">
+              Moderne und klassische Kommunikationstechnologien, die Prinzipien der
+              Datenübertragung in den öffentlichen Netzen sowie Dienste der Netzbetreiber wiederspiegeln.
+            </p>
+            <a appSelectedItem [routerLink]="['publicNetworkSystems']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        <!--card four-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/betreuen.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 10</h5>
+            <h5 class="card-title">Betreuung von IT-Systemen</h5>
+            <p class="card-text">
+              Im Rahmen der Kundenprojekte werden wichtige Details und Besonderheiten der Software-
+              und Hardwarwartung vorgestellt.
+            </p>
+            <a appSelectedItem [routerLink]="['systemAdministration']"  class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+      </div>
+      <div appSelectedItem class="col-sm-12 col-md-8 board">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

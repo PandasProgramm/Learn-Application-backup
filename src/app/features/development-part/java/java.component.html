@@ -1,0 +1,44 @@
+<div>
+  <div class="container-fluid mb-3 " style="font-family: Railway,sans-serif;">
+    <div class="row" style="padding-top: 8rem">
+      <div class="col-md-3 mt-1" style="padding-left: 3rem;">
+        <!--card one-->
+        <div appSelectedItem class="card">
+          <img src="../../../../assets/information.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder">Zusammenfassungen</h5>
+            <p class="card-text">Hier findest du alle Inhalte mit Themen als Zusammenfassung.</p>
+            <a appSelectedItem [routerLink]="['summaries']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        <!--card two-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/learningCards.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder">Lernkarten</h5>
+            <p class="card-text">
+              Hier kannst du dir eigene Lernkarten erstellen und nutzen.
+              Natürlich gibt es auch schon einen Basisbestand, den du für dich erweitern kannst.</p>
+            <a appSelectedItem [routerLink]="['learning-cards']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        <!--card three-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/quiz.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder">Quiz</h5>
+            <p class="card-text">
+              Teste dein Wissen anhand Fragen, die bereits vordefiniert sind.
+              Natürlich kannst du auch hier deine eigenen Karten hinzufügen.
+            </p>
+            <a appSelectedItem [routerLink]="['quiz']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+      </div>
+      <div appSelectedItem class="col-sm-12 col-md-8 board">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+

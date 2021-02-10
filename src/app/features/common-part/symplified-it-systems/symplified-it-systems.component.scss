@@ -1,0 +1,26 @@
+.fonts{
+  font-family: 'Fredericka the Great', cursive;
+  color:white;
+}
+header{
+  margin-top:2rem;
+  font-size: 32px;
+
+  @media screen {
+    font-size: xx-large;
+  }
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style-type: none;
+  margin-right: 2rem;
+}
+.isDisabled{
+  color: currentColor;
+  text-decoration: azure;
+}

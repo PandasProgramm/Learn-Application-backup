@@ -1,0 +1,22 @@
+.fonts{
+  font-family: 'Fredericka the Great', cursive;
+  color: snow;
+  font-size: 24px;
+}
+.row{
+    display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  width: 249px;
+  height: 159px;
+  padding-top: 5rem;
+  background-image: url("../../../../assets/box.png");
+  text-align: center;
+  color: black;
+  font-family: "Arial Black", serif;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  margin-top: 5rem;
+  cursor: pointer;
+}

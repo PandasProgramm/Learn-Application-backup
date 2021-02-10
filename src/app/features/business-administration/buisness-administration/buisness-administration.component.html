@@ -1,0 +1,94 @@
+<div>
+  <div class="container-fluid mb-3 " style="font-family: Railway,sans-serif;">
+    <h2>Betriebswirtschaftslehre</h2>
+
+    <div class="row ">
+      <div class="col-sm-12 col-md-3">
+        <!--card one-->
+        <div appSelectedItem class="card">
+          <img src="../../../../assets/cardOne.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 1</h5>
+            <p class="card-text" style="font-weight: bolder">
+              Der Betrieb und sein Umfeld.
+            </p>
+            <p class="card-text">
+              Wichtige Grundlagen des Wirtschaftens aus dem Bereich "Wirtschaft und Soziales".
+          </p>
+            <a appSelectedItem [routerLink]="['environment']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+
+        <div class="row-cols-md-4">
+        <!--card two-->
+          <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/umfeld.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lernfeld 2</h5>
+              <p class="card-text" style="font-weight: bolder">
+                Geschäftsprozesse und betriebliche Organisation
+              </p>
+              <p class="card-text">
+                Leistungs- und Geldinformationsflüsse analysieren sowie Geschäftsprozesse gestalten.
+              </p>
+              <p class="card-text">
+                Auch die Aufbauorganisation von Unternehmen sollen einer genaueren Betrachtung unterzogen werden.
+              </p>
+              <a appSelectedItem [routerLink]="['process']" class="btn btn-primary">auswählen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-cols-md-4 ">
+        <!--card three-->
+          <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/markt.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lernfeld 8</h5>
+            <p class="card-text" style="font-weight: bolder">Markt- und Kundenbeziehungen</p>
+              <p class="card-text">
+                Um den Leistungsprozess mit Erfolg abzuschließen, müssen eine gute Finanzierung der
+                Unternehmen und Projekte gesichert, die wirtschaftlich günstige Beschaffung von Diensten
+                und IT-Komponenten sichergestellt und eine gute Organisation der Protesse gewährleistet sein.
+              </p>
+             <p class="card-text">
+               Marktinstrumente werden einzeln vorgestellt und für die IT-Märkte aufbereitet.
+             </p>
+             <a appSelectedItem [routerLink]="['market']" class="btn btn-primary">
+               auswählen
+             </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-cols-md-4 ">
+        <!--card four-->
+        <div appSelectedItem class="card mt-3">
+          <img src="../../../../assets/rechnungswesen.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              Lernfeld 11
+            </h5>
+            <h5 class="card-title" style="font-weight: bolder">
+              Rechnungswesen und Controlling
+            </h5>
+            <p class="card-text">
+              Alle wichtigen Kontroll- und Steuerungsinstrumente sowie als Planungsgrundlagen des Betriebs.
+            </p>
+            <p class="card-text">
+              Verfahren der Kosten- und Leistungsrechnung werden keine Fremdwörter mehr sein.
+            </p>
+            <a appSelectedItem [routerLink]="['controlling']" class="btn btn-primary">auswählen</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div appSelectedItem class="col-sm-12 col-md-8  board " >
+            <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+

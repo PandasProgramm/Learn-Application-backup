@@ -1,0 +1,35 @@
+$font-stack: Roboto,sans-serif;
+
+$backgroundColor:#E0ECF8;
+
+h2{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.col {
+    /*flex: 1 0 18%;*/
+    margin-bottom: 3rem;
+}
+
+div{
+  background-color: $backgroundColor;
+  font-family: $font-stack;
+}
+.picture{
+  width: 200px;
+  height: 50px;
+}
+
+.board {
+  background-image: url("../../../../assets/board.jpg");
+  background-size: cover;
+}
+
