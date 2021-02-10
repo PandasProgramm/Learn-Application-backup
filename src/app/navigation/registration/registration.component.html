@@ -1,0 +1,40 @@
+<div class="container">
+
+  <div style="padding-top: 5rem">
+  <form class="row g-3 " style="padding-top: 5rem" [formGroup]="registryForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-6 ">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail ist notwendig" formControlName="email">
+      <div *ngIf="registryForm.get('email').invalid">ungültige Emailadresse</div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Passwort ist notwendig" formControlName="password">
+      <div *ngIf="registryForm.get('password').invalid">Password muss mindestens 8 Zeichen lang sein</div>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="keine notwendige Eingabe" formControlName="address" >
+      <div *ngIf="registryForm.get('address').invalid">Adresse benötigt eine Hausnummer</div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Stadt</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="keine notwendige Eingabe" formControlName="city">
+      <div *ngIf="registryForm.get('city').invalid">Eine Stadt hat keine Zahlen!</div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">plz</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="nicht notwendig" formControlName="zipCode">
+      <div *ngIf="registryForm.get('zipCode').invalid">Eine Postleitzahl hat nun mal nur 5 Zahlen</div>
+    </div>
+    <div class="col-12" style="padding-top: 1rem">
+      <lib-toastify-toast-container
+        [position]="'bottom-right'"
+        [autoClose]="2000">
+      </lib-toastify-toast-container>
+      <button appBtnListener type="submit" class="btn btn-primary" >registrieren</button>
+
+   </div>
+  </form>
+  </div>
+</div>

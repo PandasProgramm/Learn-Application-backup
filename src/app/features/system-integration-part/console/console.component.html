@@ -1,0 +1,12 @@
+<header>
+  <h2 class="fonts" style="text-align: center">Konsolenbefehle</h2>
+  <hr class="fonts" style="border-top: 2px solid white ">
+  <ul class="fonts">
+    <li><a appSelectedItem class="isDisabled" [routerLink]="['summaries']">ZUSAMMENFASSUNGEN</a></li>
+    <li><a appSelectedItem class="isDisabled" [routerLink]="['learning-cards']">LERNKARTEN</a></li>
+    <li><a appSelectedItem class="isDisabled" [routerLink]="['quiz']">QUIZ</a></li>
+  </ul>
+</header>
+<div>
+  <router-outlet></router-outlet>
+</div>

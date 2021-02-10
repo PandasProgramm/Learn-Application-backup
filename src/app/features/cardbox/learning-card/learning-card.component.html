@@ -1,0 +1,17 @@
+<div appSelect class="card blink aniChange" >
+  <div class="questionPart">
+    {{card?.question}}
+  </div>
+  <div *ngIf="showAnswer" class="bodyPart">
+    {{card?.answer}}
+  </div>
+  <div class="btn-group bar" role="group" aria-label="Basic mixed styles example">
+    <div style="margin-left: 10rem;margin-right: 1rem">{{card?.correctAnswerCount|number}}<span> x richtig beantwortet </span></div>
+    <button type="button" class="btn btn-success" (click)="onSuccess($event)"><i class="bi bi-check"></i></button>
+    <button type="button" class="btn btn-danger"  (click)="onFail($event)">X</button>
+  </div>
+  <div>
+    <button class="btn btn-dark mb-1 btnShowAnswer" (click)="showAnswer=true">Antwort anzeigen</button>
+  </div>
+</div>
+
